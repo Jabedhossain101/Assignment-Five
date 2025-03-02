@@ -20,14 +20,58 @@
       </div>
 
       <div class="navbar-end">
-        <a class="btn bg-blue-300">Back To Desk</a>
+        <a class="btn bg-blue-300" id="backBtn">Back To Desk</a>
       </div>
     </div>
 
   </nav>
   <main class="max-w-7xl mx-auto gap-4 m-3 bg-white p-2 rounded-md">
-
+    <h1 class="font-bold text-xl text-center">Blogs</h1>
+    <div class="m-3 bg-base-100 shadow-sm p-3 rounded-md">
+      <h3 class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+      <hr>
+      <p><span class="font-semibold">Ans:</span> getElementById(id): Selects an element by its id. <br>
+        1.getElementsByClassName(class): Selects elements by class name. <br>
+        2.getElementsByTagName(tag): Selects elements by tag name. <br>
+        3.querySelector(selector): Selects the first matching element using CSS selectors. <br>
+        4.querySelectorAll(selector): Selects all matching elements using CSS selectors.</p>
+    </div>
+    <div class="m-3 bg-base-100 shadow-sm p-3 rounded-md">
+      <h3 class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+      </h3>
+      <hr>
+      <p>1.innerHTML: Returns or sets the HTML content inside an element. <br>
+        2.innerText: Returns or sets only the visible text, ignoring hidden elements. <br>
+        3.textContent: Returns or sets all text content, including hidden elements.</p>
+    </div>
+    <div class="m-3 bg-base-100 shadow-sm p-3 rounded-md">
+      <h3 class="font-semibold">Question-3: What is event delegation in the DOM?</h3>
+      <hr>
+      <p>A technique where a single event listener is attached to a parent element to handle events on its child
+        elements using
+        event bubbling</p>
+    </div>
+    <div class="m-3 bg-base-100 shadow-sm p-3 rounded-md">
+      <h3 class="font-semibold">Question-4: What is event bubbling in the DOM?</h3>
+      <hr>
+      <p>A process where an event triggered on a child element propagates up through its parent elements.</p>
+    </div>
+    <div class="m-3 bg-base-100 shadow-sm p-3 rounded-md">
+      <h3 class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+      <hr>
+      <p>1.document.createElement(tag): Creates a new HTML element. <br>
+        2.appendChild(element): Adds an element as a child to another element. <br>
+        3.insertBefore(newElement, referenceElement): Inserts an element before another. <br>
+        4.removeChild(element): Removes a child element from its parent. <br>
+        5.element.remove(): Directly removes an element from the DOM.
+      </p>
+    </div>
   </main>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 
 </html>

@@ -136,6 +136,7 @@
 
     document.querySelectorAll('.completeBtn').forEach(button => {
       button.addEventListener('click', function () {
+        alert("Board Update successfully");
         this.disabled = true;
         this.classList.add('opacity-50');
         taskCount--;
