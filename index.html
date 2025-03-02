@@ -22,7 +22,7 @@
             <!-- <input type="checkbox" id="checkbox" class="checkbox checkbox-primary"> -->
             <span id="checkboxCount" class="text-lg">23</span>
           </div>
-          <div><img src="assets/theme-btn.png" alt=""></div>
+          <div><img id="bgChangeBtn" src="assets/theme-btn.png" alt=""></div>
         </div>
       </div>
   </nav>
@@ -152,6 +152,13 @@
 
     document.getElementById('discoverBtn').addEventListener('click', function () {
       window.location.href = 'demo.html';
+    });
+    const change = document.getElementById("bgChangeBtn");
+    const colors = ["bg-red-200", "bg-blue-200", "bg-green-200", "bg-slate-300", "bg-purple-300", "bg-pink-200"];
+    let index = 0;
+    change.addEventListener("click", function () {
+      document.body.className = `h-screen ${colors[index]}`;
+      index = (index + 1) % colors.length;
     });
   </script>
 </body>
