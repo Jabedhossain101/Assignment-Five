@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <button id="bgToggleBtn" class="btn btn-primary">Change Background</button>
+
+  <script>
+    const button = document.getElementById("bgToggleBtn");
+    const colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500", "bg-purple-600", "bg-pink-500"];
+    let index = 0;
+
+    button.addEventListener("click", function () {
+      document.body.className = `h-screen ${colors[index]}`;
+      index = (index + 1) % colors.length;
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <nav class="max-w-7xl mx-auto gap-4 m-3 bg-white p-2 rounded-md">
+
+    <div class="flex justify-between items-center">
+      <div class="flex items-center"><img src="assets/logo.png" alt="">
+        <h1 class="text-2xl font-bold">Dev<span class="text-blue-600">Board</span></h1>
+      </div>
+      <div class="flex items-center gap-4">
+
+        <div class="flex items-center gap-2">
+          <div class="flex gap-2 bg-green-200 p-3 rounded-3xl"><img src="assets/checkbox.png" alt="">
+            <!-- <input type="checkbox" id="checkbox" class="checkbox checkbox-primary"> -->
+            <span id="checkboxCount" class="text-lg">23</span>
+          </div>
+          <div><img src="assets/theme-btn.png" alt=""></div>
+        </div>
+      </div>
+  </nav>
+  <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4">
+    <!-- Main Content -->
+    <div class="col-span-3">
+      <!-- Top Section -->
+      <div class="grid grid-cols-3 gap-4 mb-4">
+        <div class="bg-white p-3 rounded-lg">
+          <div class="flex items-center gap-1">
+            <div>
+              <img src="assets/checkbox.png" alt="">
+            </div>
+            <div>
+              <p class="font-semibold text-md" id="taskCount">Task Assigned 6</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 bg-blue-500 text-white p-4 rounded-lg cursor-pointer" id="discoverBtn">
+          <div class="flex md:flex-row sm:flex-col">
+
+            <div><img src="assets/board.png" alt=""></div>
+            <div>
+              <p class="text-lg font-bold text-center">Discover Something New Today!</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow flex items-center gap-2">
+          <img src="assets/calender.png" alt="">
+          <span id="liveDate" class="ml-auto font-semibold">Loading...</span>
+        </div>
+      </div>
+
+      <!-- Task List -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Shop Ease</span>
+          <h2 class="font-bold text-lg mt-2">Fix Mobile Button Issue</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 21 March 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Soft Pay</span>
+          <h2 class="font-bold text-lg mt-2">Add Pay Success Modal</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 25 March 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Meta</span>
+          <h2 class="font-bold text-lg mt-2">Add new reaction</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 31 March 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Programming Hero</span>
+          <h2 class="font-bold text-lg mt-2">Fix Video Loading Issue</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 21 March 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Google LLC</span>
+          <h2 class="font-bold text-lg mt-2">Integrate AI search</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 01 April 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <span class="text-xs bg-gray-200 px-2 py-1 rounded-full">Polygon Tech</span>
+          <h2 class="font-bold text-lg mt-2">Review Ami Probashi Site</h2>
+          <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure
+            onClick works properly
+            and ensure onClick works properly</p>
+          <p class="text-sm mt-2">Deadline: 05 May 2025</p>
+          <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded completeBtn">Completed</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity Log -->
+    <div class="bg-white p-4 rounded-lg shadow h-full">
+      <div class="flex gap-1">
+        <div><img src="assets/activity.png" alt=""></div>
+        <div>
+          <h2 class="font-bold text-lg flex items-center gap-2"> Activity Log</h2>
+        </div>
+      </div>
+      <div id="activityLog" class="h-48 overflow-auto p-2 mt-2 border rounded"></div>
+      <button class="bg-indigo-500 text-white px-3 py-1 mt-2 rounded w-full" id="clearHistory">Clear History</button>
+    </div>
+  </div>
+
+  <script>
+    let taskCount = 6;
+    let checkboxCount = 23;
+    document.getElementById('liveDate').innerText = new Date().toDateString();
+
+    document.querySelectorAll('.completeBtn').forEach(button => {
+      button.addEventListener('click', function () {
+        this.disabled = true;
+        this.classList.add('opacity-50');
+        taskCount--;
+        checkboxCount++;
+        document.getElementById('taskCount').innerText = `Task Assigned ${taskCount}`;
+        document.getElementById('checkboxCount').innerText = checkboxCount;
+        document.getElementById('activityLog').innerHTML += `<p>Task completed at ${new Date().toLocaleTimeString()}</p>`;
+      });
+    });
+
+    document.getElementById('clearHistory').addEventListener('click', function () {
+      document.getElementById('activityLog').innerHTML = '';
+    });
+
+    document.getElementById('discoverBtn').addEventListener('click', function () {
+      window.location.href = 'demo.html';
+    });
+  </script>
+</body>
+
+</html>
